@@ -3,6 +3,8 @@
 # Class: A blueprint for creating instances of that class.
 # __init__ method: A constructor that initializes the object's attributes.
 # Class variables: Variables that are shared among all instances of a class.
+# Class methods: Methods that are bound to the class and not the instance. They can modify class state that applies across all instances of the class.
+# Static methods: Methods that are bound to the class and not the instance. They do not modify class or instance state and are used for utility functions.
 
 class ExampleClass:
     # Data
