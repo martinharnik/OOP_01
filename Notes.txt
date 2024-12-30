@@ -1,0 +1,15 @@
+# Data: Attributes that hold information about the state of an object.
+# Function: Methods that define the behavior of an object and can manipulate its data.
+# Class: A blueprint for creating instances of that class.
+# __init__ method: A constructor that initializes the object's attributes.
+# Class variables: Variables that are shared among all instances of a class.
+
+class ExampleClass:
+    # Data
+    def __init__(self):
+        self.data_member = 0
+
+    # Function
+    def example_method(self):
+        # Method implementation
+        pass
