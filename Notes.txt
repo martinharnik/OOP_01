@@ -13,6 +13,13 @@
 
 # dunder __repr__ method: A special method in Python classes that returns a string representation of the object, which is useful for debugging. (__repr__ stands for "representation")
 # dunder __str__ method: A special method in Python classes that returns a string representation of the object, which is useful for end users. (__str__ stands for "string")
+# dunder: A shorthand for "double underscore," referring to methods or attributes with double underscores before and after their names (e.g., __init__, __repr__).
+
+# Decorators: A design pattern in Python that allows a user to add new functionality to an existing object without modifying its structure. They are usually defined as functions that return a wrapper function.
+# Property decorator: A built-in decorator in Python that is used to define getter, setter, and deleter methods in a class. It allows for controlled access and modification of private attributes.
+# Getter: A method that gets the value of a specific attribute. It allows for controlled access to the attribute's value.
+# Setter: A method that sets the value of a specific attribute. It allows for controlled modification of the attribute's value, often including validation or other logic.
+# Deleter: A method that deletes a specific attribute.
 
 class ExampleClass:
     # Data
