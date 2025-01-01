@@ -2,6 +2,7 @@
 # Function: Methods that define the behavior of an object and can manipulate its data.
 # Class: A blueprint for creating instances of that class.
 # __init__ method: A constructor that initializes the object's attributes.
+# dunder __init__ method: A special method in Python classes, also known as a constructor, that is automatically called when a new instance of the class is created. It initializes the object's attributes.
 # Class variables: Variables that are shared among all instances of a class.
 # Class methods: Methods that are bound to the class and not the instance. They can modify class state that applies across all instances of the class.
 # Static methods: Methods that are bound to the class and not the instance. They do not modify class or instance state and are used for utility functions.
@@ -9,6 +10,9 @@
 # Inheritance: A mechanism where a new class inherits attributes and methods from an existing class.
 # isinstance: A function that checks if an object is an instance of a class or a tuple of classes.
 # issubclass: A function that checks if a class is a subclass of another class or a tuple of classes.
+
+# dunder __repr__ method: A special method in Python classes that returns a string representation of the object, which is useful for debugging. (__repr__ stands for "representation")
+# dunder __str__ method: A special method in Python classes that returns a string representation of the object, which is useful for end users. (__str__ stands for "string")
 
 class ExampleClass:
     # Data
@@ -19,3 +23,9 @@ class ExampleClass:
     def example_method(self):
         # Method implementation
         pass
+
+    def __repr__(self):
+        return f"ExampleClass(data_member={self.data_member})"
+
+    def __str__(self):
+        return f"ExampleClass with data_member = {self.data_member}"

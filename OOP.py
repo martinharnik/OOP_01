@@ -35,6 +35,12 @@ class Employee:
             return False
         else:
             return True
+    # This is a special method that returns a string representation of the object. This is useful for debugging. 
+    def __repr__(self):
+        return f"Employee('{self.first}', '{self.last}', '{self.pay}')"
+    # This is a special method that returns a string representation of the object. This is useful for end users.
+    def __str__(self):
+        return f"{self.fullname()} - {self.email}"
 
 class Developer(Employee):
 
@@ -90,4 +96,5 @@ print(issubclass(Manager, Employee))
 print(issubclass(Developer, Employee))
 print(issubclass(Developer, Manager))
 
-
+print(emp.__repr__())
+print(emp.__str__())
