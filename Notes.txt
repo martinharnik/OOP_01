@@ -6,6 +6,10 @@
 # Class methods: Methods that are bound to the class and not the instance. They can modify class state that applies across all instances of the class.
 # Static methods: Methods that are bound to the class and not the instance. They do not modify class or instance state and are used for utility functions.
 
+# Inheritance: A mechanism where a new class inherits attributes and methods from an existing class.
+# isinstance: A function that checks if an object is an instance of a class or a tuple of classes.
+# issubclass: A function that checks if a class is a subclass of another class or a tuple of classes.
+
 class ExampleClass:
     # Data
     def __init__(self):
